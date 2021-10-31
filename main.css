@@ -1,16 +1,136 @@
-#container{
+body{
+  margin:0px;
+}
+
+#header{
+  text-align:center;
+  font-size:24px;
+  color: white;
+  background-color: #4682B4;
+  padding:10px;
+}
+
+#headerborder {
+    background-color: #333;
+    height: 10px;
+    width: 100%;
+}
+
+#desk{
+  width:100%;
+  background-color:lightgrey;
+}
+
+#column-container1{
   width:960px;
-  margin:0px auto;
+  margin: 0px auto;
+  padding-top:5%;
+  padding-bottom:5%;
+  background-color:white;
+  overflow: auto;
+}
+
+#column-container{
+  display: table;
+  width: 960px;
+  margin: 0px auto;
+  background-color:white;
+  overflow: auto;
+}
+
+.column{
+  display: table-cell;
+/*padding: 16px;*/
 }
 
 #left-column{
-  width:480px;
+  width:450px;
   float:left;
-  background:blue;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #515151;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
 }
 
 #right-column{
-  width:480px;
-  float:left;
-  background:red;
+  width:450px;
+  float:right;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #515151;
+  text-align: center;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover {
+  opacity: 1
+}
+
+#qrcode img {
+	width: 50%;
+	padding-bottom: 10px;
+}
+#footer{
+    background-color: #4682B4;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}	
+
+#footerborder {
+    background-color: #333;
+    height: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width:959px){
+#column-container{
+  width:100%;
+  margin:0px auto;
+  background-color:white;
+  overflow:auto;
+}
+
+.column{
+  width:50%;
+}
+#right-column{
+  width:50%;
+}
+}
+
+@media screen and (max-width:640px){
+#column-container{
+  width:100%;
+  margin:0px auto;
+  background-color:white;
+  overflow:auto;
+  display: block;
+}
+
+.column{
+  width:100%;
+  border-style:none;
+  box-shadow:none;
+  display: block;
+}
 }
