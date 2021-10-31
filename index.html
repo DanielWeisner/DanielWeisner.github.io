@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<font face="Arial">
   <title>Raumplaner</title>
   <link href="main.css" type="text/css" rel="stylesheet"/>
-  
+<!-- Website Scale = Device Width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8Y9XT2FVC"></script>
 <script>
@@ -14,13 +16,31 @@
 </script>
 </head>
 <body>
-  <div id="container">
-    <section id="left-column">
-      Linker Block
-    </section>
-    <aside id= "right-column">
-      Rechter Block
-    </aside>
+<div id="header">
+<b>Raumplanungssystem</b>
+</div>
+<div id="headerborder"></div>
+<div id="desk">
+  <div id="column-container">
+    <div class="column" style="background:white; text-align:center">
+      <h2>Willkommen!</h2>
+	  <p>Hallo und herzlich willkommen auf unserer Internetseite! Vielen Dank für Ihr Interesse an dem neuen Planungssystem für die Lernräume an der Fachhochschule Südwestfalen für den Standort Hagen.</p>
+	  <p>Die Website befindet sich aktuell noch in der Entwicklung. Bitte nehmen Sie sich kurz Zeit, um an der hier verlinkten Befragung teilzunehmen, damit wir die Funktionen noch besser nach Ihren Vorstellungen gestallten können.</p>  
+    </div>
+    <div class= "column" style="background:white; text-align:center">
+      <p>t t t t t t t t t t t t  t t tt t  t t t t t t t t Rechter BlockRechter BlockRechter BlockRechter BlockRechter BlockRechter BlockRechter BlockRechter BlockRechter BlockRechter BlockRechter Block</p>
+    <div id="qrcode">
+	<img src="Umfrage_über_Raumbelegung.jpg" alt="QR Code zur Umfrage">
+	</div>
+	<button class="button" onclick="window.location.href = 'https://www.survio.com/survey/d/W9I5C9Q1Q6P9M8P5Z';"><span>An Umfrage teilnehmen</span></button>
+	</div>
   </div>
+</div>
+<div id="footerborder"></div>
+<div id="footer">
+<center>
+<p>Beispieltext</p>
+</center>
+</div>
 </body>
 </html>
